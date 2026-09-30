@@ -80,7 +80,7 @@ services:
       - mock-api
       - ollama
     command: >
-      sh -c "npx prisma migrate deploy && node dist/main"
+      sh -c "npx prisma migrate deploy && node dist/src/main"
 
   worker:
     build:
